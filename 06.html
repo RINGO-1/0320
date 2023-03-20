@@ -7,34 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <th colspan="2">간단한 입력 양식</th>
-        </tr>
-        <tr>
-            <td>
-                <label for="name">성명</label>
-            </td>
-            <td>
-                <input id="name" type="text" placeholder="성명입력" size="20">
-            </td>
-        </tr>
-        <tr align="center">
-            <td>
-                <label for="gender">성별</label>
-            </td>
-            <td>
-                <input id="gender" type="radio" value="female" name="gender"> 여성
-                <input id="gender" type="radio" value="male" name="gender" checked> 남성
-            </td>
-        </tr>
-        <tr align="center">
-            <td colspan="2">
-                <button type="submit">가입</button>
-                <button type="reset">취소</button>
-            </td>
-        </tr>
-       
-    </table>
+    <form>
+        <table border="">
+            <tr>
+                <th colspan="2">간단한 입력방식</th>
+            </tr>
+            <tr>
+                <th><label for="username">이름</label></th>
+                <td><input id="username" type="text" name="username"></td>
+            </tr>
+            <tr align="center">
+                <th>성별</th>
+                <td>
+                    <input id="male" type="radio" name="gender" value="m">
+                    <label for="male">남성</label>
+                    <input id="female" type="radio" name="gender" value="f">
+                    <label for="female">여성</label>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="가입">
+    </form>
 </body>
 </html>
